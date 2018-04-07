@@ -62,11 +62,25 @@ body {
     width: 12em;
     float: left;
     text-align: right;
-
-
 }
 
+window.addEventListener ("load", function (
+    var div = document.getElementById("map");
+    var lat = div.getAttribute("-39.135278");
+    var lng = div.getAttribute("175.652222");
+    var tit = div.getAttribute("Übersichtskarte");
+
+    var map = L.map(div).setView([lat, lng], 13);) 
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        +        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        +    }).addTo(map);
+        L.marker([lat, lng]).addTo(map).bindPopup(tit).openPopup();
+}
 #map {
++    width: 90%;
++    height: 360px;
++    border: 1px solid gray;
 }
 
 #footer {
