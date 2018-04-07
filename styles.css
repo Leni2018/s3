@@ -14,6 +14,7 @@ body {
     text-align: center;
     background-color: darkred;
     background-image: url('images/header.jpg');
+    width: 1280px;
 }
 #header h2 {
     font-size: 4em;
