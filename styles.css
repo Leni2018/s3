@@ -14,7 +14,7 @@ body {
     text-align: center;
     background-color: darkred;
     background-image: url('images/header.jpg');
-    width: 1280px;
+    cwidth: 1280px;
 }
 #header h2 {
     font-size: 4em;
@@ -55,7 +55,7 @@ body {
 
 }
 .article figure img {
-    width: 90%;
+    max-width: 1024px;
 }
 .article figure figcaption {
     margin-left: -12em;
