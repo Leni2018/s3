@@ -27,7 +27,7 @@ body {
 }
 #header h4 {
     font-size: 0.75em;
-    font-style: italic
+    font-style: italic;
     margin: 0;
 }
 
@@ -65,9 +65,9 @@ body {
 }
 
 #map {
-+    width: 90%;
-+    height: 360px;
-+    border: 1px solid gray;
+   width: 90%;
+   height: 360px;
+   border: 1px solid gray;
 }
 
 #footer {

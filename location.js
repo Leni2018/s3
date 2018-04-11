@@ -7,9 +7,9 @@
 window.addEventListener("load", function () {
     // DIV-Element mit id="map" im Dokument suchen und aus dessen data-* Attributen Koordinaten und Titel lesen
     var div = document.getElementById("map");
-    var lat = div.getAttribute("-45.314497");
-    var lng = div.getAttribute("166.991470");
-    var tit = div.getAttribute("Doubful Sound");
+    var lat = div.getAttribute("data-lat");
+    var lng = div.getAttribute("data-lng");
+    var tit = div.getAttribute("data-title");
 
     // Leaflet Karte im gefundenen DIV erstellen und auf die Koordinate zoomen
     var map = L.map(div).setView([lat, lng], 13);
